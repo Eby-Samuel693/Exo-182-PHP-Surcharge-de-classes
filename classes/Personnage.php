@@ -3,6 +3,7 @@
 // Ma classe s'apelle personnage
 class Personnage {
 
+
     // La propriété id a été modifié pour passer de private à protected, je ne peux pas la modifier ou la lire directement en dehors de cette classe
     // Mais les classes enfants vont hériter de cette propriété
     // - private $id;
@@ -43,5 +44,16 @@ class Personnage {
     // Getter permettant de retourner l'attribut protégé nom
     public function getNom() {
         return $this->nom;
+    }
+
+    public function getVie(): int
+    {
+        return $this->vie;
+    }
+
+
+    public function setVie(int $vie): void
+    {
+        $this->vie = $vie;
     }
 } 

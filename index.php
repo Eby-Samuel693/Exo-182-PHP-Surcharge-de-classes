@@ -6,14 +6,25 @@
 require "classes/Personnage.php";
 require "classes/Dragon.php";
 require "classes/Princesse.php";
+require "classes/sorcier.php";
 
 // Creation d'une instance de la classe personnage
 $humain = new Personnage();
-$humain->setNom("Votre nom");
+$humain->setNom("Eby");
+echo $humain->getvie();
 
 // Creation d'une instance de la classe dragon
 $dragon = new Dragon();
-$dragon->setNom("");
+$dragon->setNom("dark");
+echo $dragon->getvie();
+
+$princess = new Princesse();
+$princess->setNom("peach");
+echo $princess->getvie();
+
+$sorcier = new sorcier();
+$sorcier->setNom("kamet");
+echo $sorcier->getvie();
 
 
 
